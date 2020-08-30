@@ -1,7 +1,7 @@
 {
-  "name": "partner",
+  "name": "Spectron IR",
   "version": "1.0.0",
-  "description": "partner project",
+  "description": "Spectron IR",
   "author": "",
   "license": "ISC",
   "dependencies": {

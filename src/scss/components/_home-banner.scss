@@ -1,9 +1,31 @@
 .home-banner {
-  min-height: 740px;
-  background: url("/home/oleg_milkin/projects/spectron-front/src/images/banner.jpg") no-repeat 100% 50%;
-  background-size: cover;
-  transform: translateY(-70px);
+  min-height: 580px;
+  background: red;
+  margin: -70px 0 0 0;
   padding-top: 70px;
   position: relative;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 768px) {
+    background: url("/home/oleg_milkin/projects/spectron-front/src/images/banner.jpg") no-repeat 50% 50%;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 58px;
+    line-height: 79px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    width: 80%;
+  }
 }

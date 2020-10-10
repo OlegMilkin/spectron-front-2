@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Noto font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -222,9 +222,16 @@
 
     <!-- Banner Start -->
     <div class="home-banner">
-      <div class="container-xl">
+      <picture class="home-banner__picture-tag">
+        <source srcset="src/images/banner768.jpg" media="(max-width: 767px)">
+        <source srcset="src/images/banner960.jpg" media="(max-width: 960px)">
+        <source srcset="src/images/banner1440.jpg" media="(max-width: 1440px)">
+        <img src="src/images/banner1920.jpg" class="home-banner__img">
+      </picture>
+
+      <div class="container-xl home-banner__container">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-6">
             <h1 class="home-banner__heading">
               Medical infrared
               imaging products
@@ -234,11 +241,12 @@
             </p>
             <button type="button" class="btn btn-primary">Learn more</button>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-6">
 
           </div>
         </div>
       </div>
+
     </div>
     <!-- Banner End -->
     <div class="offers">

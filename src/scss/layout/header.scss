@@ -1,3 +1,141 @@
 .header {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
+  &__navbar {
+    padding: 8px 0;
+
+    @media (min-width: 768px) {
+      padding: 13px 0;
+    }
+  }
+
+  &__logo-holder {
+    padding: 0;
+    width: 160px;
+
+    @media (min-width: 768px) {
+      width: 254px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+  }
+
+  &__menu-opener {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #F04438;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    span {
+      background: #fff;
+      width: 14px;
+      height: 1px;
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__menu-item {
+    border-bottom: 1px solid #C4C4C4;
+
+    @media (min-width: 991px) {
+      border: none;
+    }
+
+    .dropdown-toggle::after {
+      content: "\e90b";
+      font-family: 'icomoon';
+      border: none;
+      color: #8D8D8D;
+      font-size: 7px;
+
+      @media (min-width: 991px) {
+        margin-left: 0;
+        vertical-align: middle;
+        border-top: 6px solid;
+        border-right: 4px solid transparent;
+        border-bottom: 0;
+        border-left: 4px solid transparent;
+        border-top-color: #F04438;
+      }
+    }
+
+    &:last-child {
+
+      .dropdown-menu {
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  .navbar-nav .nav-link {
+
+    &.header__menu-link {
+      font-size: 16px;
+      font-weight: 400;
+      color: #444;
+      padding: 13px 0;
+
+      @media (min-width: 991px) {
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+
+      &--lang {
+        color: #8D8D8D;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__dropdown {
+    padding: 10px 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(90deg, #002073 0%, #1093CF 16.86%, #128A30 37.39%, #EBD421 59.05%, #E27003 79.71%, #B60200 100%);
+    }
+  }
+
+  &__dropdown-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    line-height: 34px;
+
+    &:hover {
+      background: #eee;
+    }
+  }
 }

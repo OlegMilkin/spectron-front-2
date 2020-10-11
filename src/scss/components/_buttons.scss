@@ -1,5 +1,6 @@
 .btn {
   font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
   background: #F04438;
   color: #fff;
   border: 1px solid #F04438;
@@ -7,4 +8,11 @@
   line-height: 20px;
   padding: 14px .75rem;
   min-width: 160px;
+  border-radius: 8px;
+
+  &:hover {
+    background: #F04438;
+    opacity: 0.9;
+    color: #fff;
+  }
 }

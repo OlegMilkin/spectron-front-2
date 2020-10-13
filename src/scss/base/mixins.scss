@@ -1,0 +1,6 @@
+@mixin lineClimp($val) {
+  display: -webkit-box;
+  -webkit-line-clamp: $val;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

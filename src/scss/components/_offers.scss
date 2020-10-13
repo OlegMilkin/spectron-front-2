@@ -1,7 +1,104 @@
 .offers {
   &__heading {
-    font-size: 32px;
-    line-height: 44px;
-    margin: 76px 0 36px 0;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 61px 0 41px 0;
+    font-weight: 300;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+      line-height: 44px;
+      margin: 76px 0 36px 0;
+    }
+  }
+
+  &__card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #737373;
+    height: 135px;
+    @include lineClimp(6);
+
+    @media (min-width: 768px) {
+      @include lineClimp(5);
+      height: 110px;
+    }
+  }
+
+  &__card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: none;
+    position: relative;
+    margin-bottom: -4px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 6px;
+      height: 563px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 10px;
+      width: 100%;
+      background: linear-gradient(90deg, #002073 0%, #1093CF 16.86%, #128A30 37.39%, #EBD421 59.05%, #E27003 79.71%, #B60200 100%);
+    }
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+      .offers__card-text {
+        -webkit-line-clamp: unset;
+        height: auto;
+      }
+    }
+  }
+
+  &__card-img {
+    height: auto;
+    object-fit: unset;
+    object-position: unset;
+
+    @media (min-width: 768px) {
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__card-body {
+    padding: 30px 20px 50px 20px;
+    position: static;
+    background: #fff;
+    min-height: 263px;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &__card-title {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 15px;
+    color: #161616;
+    display: flex;
+    align-items: center;
+    height: 58px;
+
+    span {
+      @include lineClimp(2);
+    }
+  }
+
+  &__btn {
+    margin: 10px 0 80px 0;
   }
 }

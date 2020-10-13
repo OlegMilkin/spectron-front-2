@@ -15,7 +15,7 @@
     >
 
     <!-- Icons -->
-    <link rel="stylesheet" href="dist/icons/icons.css">
+    <link rel="stylesheet" href="src/icons/icons.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="dist/css/app.css">
@@ -32,7 +32,7 @@
                 href="#"
               >
                 <img
-                  src="src/images/logo.svg"
+                  src="dist/images/logo.svg"
                   alt="Spectronir" title="Spectronir"
                   class="header__logo"
                 />
@@ -70,7 +70,7 @@
                       href="#"
                       id="navbarAbout"
                       role="button"
-                      data-toggle="dropdown"
+
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
@@ -109,10 +109,10 @@
                   <li class="nav-item dropdown header__menu-item">
                     <a
                       class="nav-link dropdown-toggle header__menu-link"
-                      href="#"
+                      href="http://google.com"
                       id="navbarProducts"
                       role="button"
-                      data-toggle="dropdown"
+
                       aria-haspopup="true" aria-expanded="false"
                     >
                       Products
@@ -148,10 +148,10 @@
                   </li>
                   <li class="nav-item dropdown header__menu-item">
                     <a class="nav-link dropdown-toggle header__menu-link"
-                       href="#"
+                       href="http://google.com"
                        id="navbarImages"
                        role="button"
-                       data-toggle="dropdown"
+
                        aria-haspopup="true"
                        aria-expanded="false"
                     >
@@ -193,7 +193,7 @@
                     <a class="nav-link dropdown-toggle header__menu-link header__menu-link--lang"
                        href="#" id="navbarLanguage"
                        role="button"
-                       data-toggle="dropdown"
+
                        aria-haspopup="true" aria-expanded="false"
                     >
                       <span class="icon-lang "></span>
@@ -235,10 +235,10 @@
     <!-- Banner Start -->
     <div class="home-banner">
       <picture class="home-banner__picture-tag">
-        <source srcset="src/images/banner768.jpg" media="(max-width: 767px)">
-        <source srcset="src/images/banner960.jpg" media="(max-width: 1200px)">
-        <source srcset="src/images/banner1440.jpg" media="(max-width: 1440px)">
-        <img src="src/images/banner1920.jpg" class="home-banner__img">
+        <source srcset="dist/images/banner768.jpg" media="(max-width: 767px)">
+        <source srcset="dist/images/banner960.jpg" media="(max-width: 1200px)">
+        <source srcset="dist/images/banner1440.jpg" media="(max-width: 1440px)">
+        <img src="dist/images/banner1920.jpg" class="home-banner__img">
       </picture>
 
       <div class="container-xl home-banner__container">
@@ -259,74 +259,305 @@
 
     </div>
     <!-- Banner End -->
+
+    <!-- Offers start -->
     <div class="offers">
       <h2 class="offers__heading text-center">
         Our current offers
       </h2>
       <div class="container-xl">
         <div class="row">
-          <div class="col-lg-4 col-md-4 mb-4">
-            <a href="#" class="card">
-              <img src="src/images/foto-bg.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a href="#" class="card offers__card">
+              <img src="dist/images/foto-bg.jpg" class="card-img-top offers__card-img" alt="">
+              <div class="card-body offers__card-body">
+                <h5 class="card-title offers__card-title">
+                  <span>
+                    Elevated Body Temperature Screening
+                  </span>
+                </h5>
+                <p class="card-text offers__card-text">
+                  Spectron IR's professional medical software is a perfect solution for detecting elevated body temperature in various types of industries! The Spectron IR software has two built-in alarms
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur cumque deserunt earum error, esse labore quae reiciendis? Ad dolor doloribus enim eos facere, molestias mollitia praesentium quaerat quia recusandae?
+                </p>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-md-4 mb-4">
-            <a href="#" class="card">
-              <img src="src/images/foto-bg.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a href="#" class="card offers__card">
+              <img src="dist/images/foto-bg.jpg" class="card-img-top offers__card-img" alt="">
+              <div class="card-body offers__card-body">
+                <h5 class="card-title offers__card-title">
+                  <span>
+                     Entry (No Stand)
+                  </span>
+                </h5>
+                <p class="card-text offers__card-text">Spectron IR's professional medical software is a perfect solution for detecting elevated body temperature in various types of industries! The Spectron IR software has two built-in alarms</p>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-md-4 mb-4">
-            <a href="#" class="card">
-              <img src="src/images/foto-bg.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a href="#" class="card offers__card">
+              <img src="dist/images/foto-bg.jpg" class="card-img-top offers__card-img" alt="">
+              <div class="card-body offers__card-body">
+                <h5 class="card-title offers__card-title">
+                  <span>
+                    Dual Pole Camera Stand
+                  </span>
+                </h5>
+                <p class="card-text offers__card-text">Spectron IR's professional medical software is a perfect solution for detecting elevated body temperature in various types of industries! The Spectron IR software has two built-in alarms</p>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-md-4 mb-4">
-            <a href="#" class="card">
-              <img src="src/images/foto-bg.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a href="#" class="card offers__card">
+              <img src="dist/images/foto-bg.jpg" class="card-img-top offers__card-img" alt="">
+              <div class="card-body offers__card-body">
+                <h5 class="card-title offers__card-title">
+                  <span>
+                     Automated Camera Stand
+                  </span>
+                </h5>
+                <p class="card-text offers__card-text">Spectron IR's professional medical software is a perfect solution for detecting elevated body temperature in various types of industries! The Spectron IR software has two built-in alarms</p>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-md-4 mb-4">
-            <a href="#" class="card">
-              <img src="src/images/foto-bg.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a href="#" class="card offers__card">
+              <img src="dist/images/foto-bg.jpg" class="card-img-top offers__card-img" alt="">
+              <div class="card-body offers__card-body">
+                <h5 class="card-title offers__card-title">
+                  <span>
+                    Medical thermography images
+                  </span>
+                </h5>
+                <p class="card-text offers__card-text">Spectron IR's professional medical software is a perfect solution for detecting elevated body temperature in various types of industries! The Spectron IR software has two built-in alarms</p>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-md-4 mb-4">
-            <a href="#" class="card">
-              <img src="src/images/foto-bg.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a href="#" class="card offers__card">
+              <img src="dist/images/foto-bg.jpg" class="card-img-top offers__card-img" alt="">
+              <div class="card-body offers__card-body">
+                <h5 class="card-title offers__card-title">
+                  <span>
+                    Imaging workstation
+                  </span>
+                </h5>
+                <p class="card-text offers__card-text">Spectron IR's professional medical software is a perfect solution for detecting elevated body temperature in various types of industries! The Spectron IR software has two built-in alarms</p>
               </div>
             </a>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-lg-12">
-            <button type="button" class="btn btn-primary">Show all</button>
+            <button type="button" class="btn offers__btn">Show all</button>
           </div>
         </div>
       </div>
     </div>
+    <!-- Offers end -->
+
+    <!-- Fda start -->
+    <div class="fda">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9 fda__video">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 fda__text">
+            <h3>
+              FDA indications. Spectron IR Medical Infrared Imaging System
+            </h3>
+            <h4>
+              FDA 510(k) Indications for Use <br>
+              FDA 510(k) #KO32471
+            </h4>
+            <p>
+              Indications for use: The Spectron IR Clinical Infrared Imaging System is intended for adjunctive diagnostic
+              screening for the detection of breast cancer and other uses such as: peripheral vascular disease,
+              neuromusculoskeletal disorders, extracranial <a href="#">cerebral</a> and facial vascular disease, thyroid gland
+              abnormalities, and various other neoplastic, metabolic and inflammatory conditions.
+            </p>
+            <p>
+              Use of the TyTron C-500 is not intended to be a sole diagnostic procedure for these diseases and conditions.
+            </p>
+            <button
+              type="button"
+              class="btn"
+            >
+              View the FDA document.
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fda end -->
+
+    <!-- Applications start -->
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="offers__heading text-center">
+            Medical thermography applications
+          </h2>
+          <div class="applications">
+            <a href="#" class="applications__link">
+              <img src="dist/images/app-general.jpg" alt="" class="applications__img">
+              <div class="applications__text">
+                General
+              </div>
+            </a>
+            <a href="#" class="applications__link">
+              <img src="dist/images/app-breast.jpg" alt="" class="applications__img">
+              <div class="applications__text">
+                Breast
+              </div>
+            </a>
+            <a href="#" class="applications__link">
+              <img src="dist/images/app-vascular.jpg" alt="" class="applications__img">
+              <div class="applications__text">
+                Vascular
+              </div>
+            </a>
+            <a href="#" class="applications__link">
+              <img src="dist/images/app-pain.jpg" alt="" class="applications__img">
+              <div class="applications__text">
+                Information / Pain
+              </div>
+            </a>
+            <a href="#" class="applications__link">
+              <img src="dist/images/app-neuro.jpg" alt="" class="applications__img">
+              <div class="applications__text">
+                Neuromusculoskeletal
+              </div>
+            </a>
+            <a href="#" class="applications__link">
+              <img src="dist/images/app-dermatology.jpg" alt="" class="applications__img">
+              <div class="applications__text">
+                Dermatology
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Applications end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="footer__brands">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-lg-12 footer__brands-list">
+              <a href="#" class="footer__brand-link">
+                <img src="dist/images/phakos.png" target="_blank">
+              </a>
+              <a href="#" class="footer__brand-link">
+                <img src="dist/images/iact-banner.png" target="_blank">
+              </a>
+              <a href="#" class="footer__brand-link">
+                <img src="dist/images/iact.png" target="_blank">
+              </a>
+              <a href="#" class="footer__brand-link">
+                <img src="dist/images/infrared.png" target="_blank">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer__bottom-col">
+              <h6 class="footer__bottom-headline">
+                Spectron IR &copy; 2020
+              </h6>
+              <ul class="footer__list">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                  Not available in Oregon
+                </li>
+              </ul>
+              <div class="footer__icons-list">
+                <a href="#" target="_blank">
+                  <span class="icon-fb"></span>
+                </a>
+                <a href="#" target="_blank">
+                  <span class="icon-in"></span>
+                </a>
+                <a href="#" target="_blank">
+                  <span class="icon-tw"></span>
+                </a>
+                <a href="#" target="_blank">
+                  <span class="icon-youtube"></span>
+                </a>
+                <a href="#" target="_blank">
+                  <span class="icon-google"></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 footer__bottom-col">
+              <h6 class="footer__bottom-headline">
+                E-mail:
+              </h6>
+              <ul class="footer__list">
+                <li>
+                  <a href="mailto:info@spectronir.com">info@spectronir.com</a>
+                </li>
+                <li>
+                  <a href="mailto:germany@spectronir.com">germany@spectronir.com</a>
+                </li>
+                <li>
+                  <a href="mailto:africasales@spectronir.com ">africasales@spectronir.com </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer__bottom-col">
+              <h6 class="footer__bottom-headline">
+                Phone
+              </h6>
+              <ul class="footer__list">
+                <li>
+                  <a href="tel:5418164555">541-816-4555</a>
+                </li>
+                <li>
+                  <a href="tel:5418164565">541-816-4565 (fax)</a>
+                </li>
+                <li>
+                  <a href="tel:8554826444">855-482-6444 (toll free)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer__bottom-col">
+              <h6 class="footer__bottom-headline">
+                Address:
+              </h6>
+              <ul class="footer__list">
+                <li>
+                  841 W. Stewart Ave. #9 <br> Medford, OR. 97501
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="js_back-top back-to-top">
+          <span class="icon-arrow-up"></span>
+        </a>
+      </div>
+    </footer>
+    <!-- Footer end -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -345,5 +576,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="src/js/app.js"></script>
   </body>
 </html>

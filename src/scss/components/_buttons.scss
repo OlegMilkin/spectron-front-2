@@ -9,10 +9,11 @@
   padding: 14px .75rem;
   min-width: 160px;
   border-radius: 8px;
+  transition: all 0.3s;
 
   &:hover {
     background: #F04438;
-    opacity: 0.9;
+    opacity: 0.8;
     color: #fff;
   }
 }

@@ -1,3 +1,8 @@
+//Base
+@import "base/base";
+@import "base/variables";
+@import "base/mixins";
+
 //Layout
 @import "layout/header";
 @import "layout/footer";
@@ -6,9 +11,6 @@
 @import "components/_home-banner";
 @import "components/_offers";
 @import "components/_buttons";
-
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #444;
-}
+@import "components/_fda";
+@import "components/_applications";
 

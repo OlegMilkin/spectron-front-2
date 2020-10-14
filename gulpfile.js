@@ -9,6 +9,9 @@ const gulpSequence = require('gulp-sequence');
 const autoprefixer = require('gulp-autoprefixer');
 const notify = require('gulp-notify');
 const rename = require("gulp-rename");
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const concat = require("gulp-concat");
 
 var isDevelopment = true;
 
@@ -26,16 +29,24 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('dist/css/'))
 });
 
+gulp.task('scripts', function(){
+  gulp.src('src/js/app.js')
+    .pipe(babel({presets: ['env']}))
+    .pipe(uglify())
+    .pipe(rename({basename: 'app.min'}))
+    .pipe(gulp.dest('dist/js'))
+});
+
 gulp.task('clean', function () {
-  return del(['dist/css']);
+  return del(['dist/css', 'dist/js']);
 });
 
 gulp.task('build', function (callback) {
-  gulpSequence('clean', 'styles')(callback)
+  gulpSequence('clean', 'styles', 'scripts')(callback)
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['src/scss/**/*.*'], ['styles']);
+  gulp.watch(['src/scss/**/*.*', 'src/js/**/*.*'], ['styles', 'scripts']);
 });
 
 gulp.task('dev', function (callback) {

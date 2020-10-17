@@ -1,0 +1,241 @@
+.article-container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #444;
+
+  p, ul, ol, h2, h3, h4, h5, h5 {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  h4, h5, h5 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+    margin: 40px 0;
+    color: #444;
+
+    @media (min-width: 768px) {
+      margin: 0 0 45px 0;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    margin: 30px 0;
+    color: #444;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+      line-height: 44px;
+      margin: 40px 0;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 25px 0;
+    color: #444;
+
+    @media (min-width: 768px) {
+      font-size: 26px;
+      line-height: 28px;
+      margin: 35px 0;
+    }
+  }
+
+  p, ul, ol {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 0;
+    margin: 40px 0;
+
+    @media (min-width: 768px) {
+      margin: 0 0 45px 0;
+    }
+  }
+
+  ul, li {
+    list-style-position: inside;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 14px;
+      background: #ED8125;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  ol {
+    margin-left: 30px;
+    li {
+      display: revert;
+      list-style: inherit;
+      list-style-position: outside;
+      &:before {
+        content: "";
+        display: none;
+      }
+
+      ol {
+        margin-left: 30px;
+        margin-top: 10px;
+        li {
+          list-style: lower-alpha;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #2196F3;
+    text-decoration: underline;
+    word-break: break-all;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aligncenter {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .alignleft {
+    float: left;
+  }
+
+  .alignright {
+    float: right;
+  }
+
+  .image-left-halfwidth {
+    width: 100% !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 40px 0;
+
+    @media (min-width: 450px) {
+      width: calc(50% - 10px) !important;
+    }
+
+    img {
+      width: auto !important;
+      height: auto !important;
+      max-width: 100% !important;;
+    }
+  }
+
+  .image-right-halfwidth {
+    width: 100% !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+
+    @media (min-width: 450px) {
+      width: calc(50% - 10px) !important;
+      margin: 0 0 40px 0;
+    }
+
+    img {
+      width: auto !important;
+      height: auto !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .image-left-halfwidth {
+    margin-right: 0;
+    float: left;
+
+    @media (min-width: 768px) {
+      margin-right: 10px;
+    }
+  }
+
+  .image-right-halfwidth {
+    margin-left: 0;
+    float: right;
+
+    @media (min-width: 768px) {
+      margin-left: 10px;
+    }
+  }
+
+  .not-required {
+    display: block;
+    background: rgba(0, 105, 231, 0.2);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B6EA8;
+    padding: 16px 13px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-left: 3px solid #2B6EA8;
+  }
+
+  .wp-caption {
+    max-width: 290px !important;
+
+    @media (min-width: 768px) {
+      max-width: inherit !important;
+    }
+  }
+
+  .wp-caption-text {
+    font-size: 15px;
+    line-height: 27px;
+    color: #8d8d8d;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+}

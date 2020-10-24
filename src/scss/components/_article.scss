@@ -10,6 +10,10 @@
   font-family: 'Noto Sans KR', sans-serif;
   color: #444;
 
+  &--products {
+    max-width: 960px;
+  }
+
   p, ul, ol, h2, h3, h4, h5, h5 {
     font-family: 'Noto Sans KR', sans-serif;
   }
@@ -86,6 +90,7 @@
       border-radius: 50%;
       margin-right: 14px;
       background: #ED8125;
+      flex: none;
     }
 
     &:last-child {

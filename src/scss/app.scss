@@ -17,13 +17,6 @@
 @import "components/_headline";
 @import "components/_product";
 
-.test {
-  background: url(../images/map.png) no-repeat;
-  background-position: 50% 110px;
-  background-attachment: fixed;
-
-  @media (min-width: 768px) {
-    background-position: 50% 145px;
-  }
-}
+//Pages
+@import "pages/_partners";
 

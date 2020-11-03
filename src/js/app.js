@@ -42,4 +42,15 @@ $(window).scroll(function () {
 backToTop.on('click', function(e){
   window.scrollTo({ top: 0, behavior: 'smooth' });
   e.preventDefault();
-})
+});
+
+$('.js_collapse-list').on('click', function(){
+  $(this).text(function(i, text) {
+    return text === "Show all partners" ? "Hide all partners" : "Show all partners";
+  });
+
+  $('.js_partners-list').toggleClass('active');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+});

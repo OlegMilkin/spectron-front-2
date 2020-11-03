@@ -1,0 +1,30 @@
+.partners {
+  background: url(../images/map.png) no-repeat;
+  background-position: 50% 110px;
+  background-attachment: fixed;
+
+  @media (min-width: 768px) {
+    background-position: 50% 145px;
+  }
+
+  &__list {
+    margin-top: 20px !important;
+
+    li {
+      &:before {
+        width: 4px;
+        height: 4px;
+      }
+    }
+
+    li:nth-child(n+11) {
+      display: none;
+    }
+
+    &.active {
+      li:nth-child(n+11) {
+        display: flex;
+      }
+    }
+  }
+}

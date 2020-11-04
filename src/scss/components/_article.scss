@@ -377,7 +377,7 @@
 .contact {
 
   p {
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
   }
 
   &__headline {
@@ -407,7 +407,7 @@
   }
 
   &__fb {
-    max-width: 511px;
+    max-width: 522px;
     margin: 70px auto 70px auto;
 
     @media (min-width: 768px) {

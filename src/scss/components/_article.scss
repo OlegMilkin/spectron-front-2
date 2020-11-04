@@ -255,3 +255,66 @@
     color: #8d8d8d;
   }
 }
+
+.figure-full-width {
+  width: 100%;
+  padding: 0 15px;
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    margin-top: 10px;
+    color: #8d8d8d;
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+.p-full-width {
+  width: 100%;
+}
+
+.software-app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    @media (min-width: 500px) {
+      width: 33.3%;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  span {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+}

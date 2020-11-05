@@ -9,6 +9,7 @@
   line-height: 27px;
   font-family: 'Noto Sans KR', sans-serif;
   color: #444;
+  overflow: hidden;
 
   &--products {
     max-width: 960px;
@@ -81,7 +82,6 @@
   li {
     margin-bottom: 11px;
     display: flex;
-    align-items: center;
 
     &::before {
       content: "";
@@ -91,6 +91,7 @@
       margin-right: 14px;
       background: #ED8125;
       flex: none;
+      margin-top: 10px;
     }
 
     &:last-child {
@@ -367,6 +368,11 @@
 }
 
 .google-form {
+  margin: 0 -4%;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
   iframe {
     border: none;
     width: 100%;

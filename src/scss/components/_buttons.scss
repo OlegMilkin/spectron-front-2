@@ -1,4 +1,4 @@
-.btn {
+.btn, a.btn {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   background: #F04438;
@@ -10,6 +10,7 @@
   min-width: 160px;
   border-radius: 8px;
   transition: all 0.3s;
+  text-decoration: none;
 
   &:hover {
     background: #F04438;

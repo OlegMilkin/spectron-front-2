@@ -11,7 +11,7 @@
   color: #444;
   overflow: hidden;
 
-  &--products {
+  &--wide {
     max-width: 960px;
   }
 
@@ -281,7 +281,6 @@
   width: 100%;
 }
 
-
 //Software page
 .software-app {
   display: flex;
@@ -439,3 +438,69 @@
   }
 }
 
+//Reference materials
+.reference {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+
+  @media (min-width: 450px) {
+    padding: 30px 30px 40px 30px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #002073 0%, #1093CF 16.86%, #128A30 37.39%, #EBD421 59.05%, #E27003 79.71%, #B60200 100%);
+  }
+
+  h3 {
+    margin: 0 0 15px 0;
+    color: #161616;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #737373;
+    margin: 0 0 15px 0;
+  }
+
+  p {
+    color: #737373;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    width: 350px;
+    flex: none;
+    text-align: center;
+
+    img {
+      max-height: 300px;
+    }
+  }
+
+  &__text {
+
+  }
+}

@@ -17,4 +17,32 @@
     opacity: 0.8;
     color: #fff;
   }
+  
+  &.btn-arrow {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 10px;
+    
+    &.collapsed {
+      &:before {
+        transform: rotate(45deg);
+        margin-top: -8px;
+      }
+    }
+    
+    &:before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -3px;
+      transform-origin: center;
+      transition: 0.3s;
+      transform: rotate(-135deg);
+    }
+  }
 }

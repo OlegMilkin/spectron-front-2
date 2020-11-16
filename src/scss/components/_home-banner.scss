@@ -1,11 +1,9 @@
 .home-banner {
   margin: -90px 0 0 0;
   position: relative;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   height: auto;
   overflow: hidden;
   display: flex;
-  flex-direction: column-reverse;
 
   @media (min-width: 768px) {
     height: 580px;
@@ -69,33 +67,5 @@
       line-height: 79px;
     }
 
-  }
-
-  &__description {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 35px;
-    font-weight: 300;
-    width: 100%;
-    padding: 0 15px;
-
-    @media (min-width: 768px) {
-      font-size: 18px;
-      line-height: 29px;
-      width: 80%;
-      margin-bottom: 30px;
-      @include lineClimp(3);
-      padding: 0;
-    }
-  }
-
-  &__btn {
-    margin: 0 15px;
-    min-width: 172px;
-
-    @media (min-width: 768px) {
-      margin: 0;
-      min-width: inherit;
-    }
   }
 }

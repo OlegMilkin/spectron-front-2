@@ -24,6 +24,20 @@ $( window ).resize(function() {
 
 $( document ).ready(function() {
   checkMobileMenu();
+
+  // Slick init
+  $('.js_home-carousel').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    cssEase: 'linear',
+    arrows: false,
+    customPaging: function(slider, i) {
+      return '<button class="tab">' + $(slider.$slides[i]).find(".test").html() + '</button>';
+    },
+  });
 });
 
 var header = $('.header');
@@ -44,13 +58,3 @@ backToTop.on('click', function(e){
   e.preventDefault();
 });
 
-$('.js_collapse-list').on('click', function(){
-  $(this).text(function(i, text) {
-    return text === "Show all partners" ? "Hide all partners" : "Show all partners";
-  });
-
-  $('.js_partners-list').toggleClass('active');
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-
-});

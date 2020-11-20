@@ -35,7 +35,7 @@ $( document ).ready(function() {
     cssEase: 'linear',
     arrows: false,
     customPaging: function(slider, i) {
-      return '<button class="tab">' + $(slider.$slides[i]).find(".test").html() + '</button>';
+      return '<div>' + $(slider.$slides[i]).find(".test").html() + '</div>';
     },
   });
 });

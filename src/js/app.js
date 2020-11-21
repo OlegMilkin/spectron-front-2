@@ -22,6 +22,12 @@ $( window ).resize(function() {
   checkMobileMenu();
 });
 
+
+$(window).on('load', function(){
+  $('.js_carousel-heading').show();
+  $('.js_carousel-heading').insertBefore( $( ".slick-dots" ) );
+})
+
 $( document ).ready(function() {
   checkMobileMenu();
 
@@ -30,12 +36,12 @@ $( document ).ready(function() {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 50000,
     fade: true,
     cssEase: 'linear',
     arrows: false,
     customPaging: function(slider, i) {
-      return '<div>' + $(slider.$slides[i]).find(".test").html() + '</div>';
+      return $(slider.$slides[i]).find(".js_carousel-content").html();
     },
   });
 });

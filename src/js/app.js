@@ -36,7 +36,7 @@ $( document ).ready(function() {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 50000,
+    autoplaySpeed: 5000,
     fade: true,
     cssEase: 'linear',
     arrows: false,

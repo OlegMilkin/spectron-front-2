@@ -34,10 +34,30 @@
       &:first-child {
         margin: 0;
       }
-
+  
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -3px;
+        width: 3px;
+        overflow: hidden;
+        background: linear-gradient(0deg, #002073 0%, #1093CF 16.86%, #128A30 37.39%, #EBD421 59.05%, #E27003 79.71%, #B60200 100%);
+       
+      }
+      
       &.slick-active {
         .home-carousel__content {
-          max-height: 500px;
+          animation: sliderHeight;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        
+        &:before {
+          content: "";
+          animation: gradientHeight;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
         }
       }
     }
@@ -80,10 +100,8 @@
   }
 
   &__content {
-    height: auto;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
   }
 
   &__title {
@@ -128,4 +146,14 @@
     position: relative;
     font-weight: 300;
   }
+}
+
+@keyframes sliderHeight {
+  0%   { max-height: 0; }
+  100% { max-height: 500px; }
+}
+
+@keyframes gradientHeight {
+  0%   { height: 0; }
+  100% { height: 100%; }
 }

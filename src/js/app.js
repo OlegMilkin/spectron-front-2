@@ -40,6 +40,11 @@ $( document ).ready(function() {
     fade: true,
     cssEase: 'linear',
     arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     customPaging: function(slider, i) {
       return $(slider.$slides[i]).find(".js_carousel-content").html();
     },

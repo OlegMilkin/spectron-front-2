@@ -16,7 +16,7 @@
   }
   
   &--full {
-    max-width: 100%;
+    max-width: calc(100% - 30px);
   }
   
   p, ul, ol, h2, h3, h4, h5, h5 {
@@ -111,6 +111,14 @@
     }
   }
 
+  .collapse-home {
+    li {
+      &:before {
+        margin-top: 10px;
+      }
+    }
+  }
+  
   ol {
     margin-left: 30px;
     li {
